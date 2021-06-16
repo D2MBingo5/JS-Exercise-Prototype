@@ -136,10 +136,10 @@ function Airplane(name) {
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
-    1. 
-    2. 
-    3. 
-    4. 
+    1. Window Binding happens when no other principle applies. When "this" is called, there is no context, and everything possibly available gets spit out at you. We want to avoid window binding.
+    2. Implicit Binding is the most common principle. In Implicit Binding, when a function is invoked, it looks left of the dot, and that's what "this" is.
+    3. New Binding is used in constructor functions. When we create a function, we use the keyword "new" to let the program know what "this" is.
+    4. Explicit Binding happens when we use .call, .apply, or .bind. In using these methods, "this" is EXPLICITLY defined, hence the name.
   */
   
   
