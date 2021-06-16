@@ -103,7 +103,15 @@ function Airplane(name) {
   Car.prototype.fill = function(gallons){
     return this.tank = this.tank + gallons;
   }
-  
+  Car.prototype.drive = function(distance){
+    return this.tank = this.tank - (distance/this.milesPerGallon), this.odometer  = this.odometer + distance;
+  }
+  const carOne = new Car('Honda', 20);
+  console.log(carOne);
+  carOne.fill(25);
+  console.log(carOne);
+  carOne.drive(400);
+  console.log(carOne);
   
   /*
     TASK 3
